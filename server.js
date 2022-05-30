@@ -14,7 +14,7 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 app.use(cors({
-  origin:["http://localhost:3000"],
+  origin:"*",
 }));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
